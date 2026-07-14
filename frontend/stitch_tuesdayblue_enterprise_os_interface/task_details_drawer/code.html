@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TuesdayBlue - Task Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-card": "#151C2F",
+                        "tertiary": "#ffb596",
+                        "background": "#0f131e",
+                        "on-secondary-fixed-variant": "#004880",
+                        "surface": "#0f131e",
+                        "success": "#22C55E",
+                        "on-tertiary-container": "#ffede6",
+                        "on-surface-variant": "#c3c6d7",
+                        "secondary-container": "#0072c4",
+                        "surface-sidebar": "#0F172A",
+                        "surface-bright": "#353945",
+                        "on-tertiary": "#581e00",
+                        "surface-variant": "#313441",
+                        "error": "#ffb4ab",
+                        "text-primary": "#F8FAFC",
+                        "inverse-on-surface": "#2c303c",
+                        "secondary-fixed-dim": "#a1c9ff",
+                        "primary": "#b4c5ff",
+                        "warning": "#F59E0B",
+                        "tertiary-fixed": "#ffdbcd",
+                        "on-secondary-container": "#f0f4ff",
+                        "on-tertiary-fixed": "#360f00",
+                        "on-primary": "#002a78",
+                        "surface-dim": "#0f131e",
+                        "border-subtle": "rgba(255, 255, 255, 0.08)",
+                        "outline-variant": "#434655",
+                        "on-primary-fixed": "#00174b",
+                        "secondary": "#a1c9ff",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "inverse-surface": "#dfe2f2",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "danger": "#EF4444",
+                        "tertiary-container": "#bc4800",
+                        "on-error": "#690005",
+                        "on-background": "#dfe2f2",
+                        "secondary-fixed": "#d2e4ff",
+                        "surface-tint": "#b4c5ff",
+                        "on-surface": "#dfe2f2",
+                        "primary-fixed": "#dbe1ff",
+                        "on-primary-container": "#eeefff",
+                        "error-container": "#93000a",
+                        "surface-container": "#1b1f2b",
+                        "outline": "#8d90a0",
+                        "primary-container": "#2563eb",
+                        "on-secondary-fixed": "#001c37",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-high": "#262a36",
+                        "inverse-primary": "#0053db",
+                        "on-secondary": "#00325a",
+                        "text-secondary": "#94A3B8",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "surface-container-lowest": "#0a0e19",
+                        "surface-container-low": "#171b27",
+                        "surface-container-highest": "#313441"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                    spacing: {
+                        "sidebar-width": "280px",
+                        "margin-desktop": "40px",
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "unit": "4px"
+                    },
+                    fontFamily: {
+                        "title-lg": ["Inter"],
+                        "display-md": ["Inter"],
+                        "code": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    fontSize: {
+                        "title-lg": ["20px", { lineHeight: "28px", fontWeight: "500" }],
+                        "display-md": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "code": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+                        "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+                        "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "headline-lg": ["30px", { lineHeight: "38px", letterSpacing: "-0.01em", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }]
+                    }
+                }
+            }
+        };
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #090D18; color: #F8FAFC; }
+        .ambient-shadow { box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(37, 99, 235, 0.1); }
+        .glass-panel { background: rgba(21, 28, 47, 0.85); backdrop-filter: blur(20px); border-left: 1px solid rgba(255,255,255,0.08); }
+        .btn-primary { background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2); }
+        .btn-primary:hover { filter: brightness(1.1); }
+        .input-glow:focus-within { box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5); }
+        .card-hover { transition: all 0.2s; border: 1px solid rgba(255,255,255,0.08); }
+        .card-hover:hover { border-color: rgba(37, 99, 235, 0.3); background-color: rgba(255, 255, 255, 0.02); }
+        
+        /* Custom Scrollbar for Drawer */
+        .custom-scroll::-webkit-scrollbar { width: 6px; }
+        .custom-scroll::-webkit-scrollbar-track { background: transparent; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
+        .custom-scroll::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+    </style>
+</head>
+<body class="antialiased overflow-hidden h-screen flex">
+<!-- Mock Background (Kanban Board) -->
+<div class="flex-1 p-gutter opacity-30 select-none pointer-events-none">
+<h1 class="font-headline-lg text-headline-lg mb-8">Boards</h1>
+<div class="flex gap-gutter">
+<div class="w-80 h-96 bg-surface-card rounded-xl border border-border-subtle p-4"></div>
+<div class="w-80 h-96 bg-surface-card rounded-xl border border-border-subtle p-4"></div>
+<div class="w-80 h-96 bg-surface-card rounded-xl border border-border-subtle p-4"></div>
+</div>
+</div>
+<!-- Backdrop Overlay -->
+<div class="fixed inset-0 bg-background/60 backdrop-blur-[2px] z-40 transition-opacity"></div>
+<!-- Task Detail Drawer (Slide-over) -->
+<div class="fixed right-0 top-0 h-full w-[800px] max-w-[90vw] glass-panel z-50 flex flex-col ambient-shadow transform transition-transform duration-300 translate-x-0">
+<!-- Header -->
+<header class="flex items-center justify-between p-6 border-b border-border-subtle">
+<div class="flex items-center gap-4">
+<span class="px-3 py-1 bg-surface-container rounded-md border border-border-subtle font-code text-code text-text-secondary">TB-409</span>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-container/10 border border-primary-container/30 cursor-pointer hover:bg-primary-container/20 transition-colors">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="font-label-md text-label-md text-primary">In Progress</span>
+<span class="material-symbols-outlined text-[16px] text-primary">expand_more</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 text-text-secondary hover:text-text-primary hover:bg-white/5 rounded-lg transition-colors">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+<button class="p-2 text-text-secondary hover:text-text-primary hover:bg-white/5 rounded-lg transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</header>
+<!-- Main Content Area -->
+<div class="flex-1 flex overflow-hidden">
+<!-- Left Column: Primary Content -->
+<div class="flex-1 overflow-y-auto custom-scroll p-8 border-r border-border-subtle">
+<!-- Title -->
+<div class="mb-8">
+<h2 class="font-headline-lg text-headline-lg text-text-primary leading-tight mb-2">Implement global search with Command Palette</h2>
+<div class="flex items-center gap-4 text-text-secondary font-body-sm text-body-sm">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">person</span> Created by Alex M. on Oct 12</span>
+</div>
+</div>
+<!-- Description (Rich Text) -->
+<div class="mb-10">
+<h3 class="font-label-md text-label-md text-text-secondary uppercase mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">subject</span> Description
+                    </h3>
+<div class="bg-surface-container border border-border-subtle rounded-xl p-4 input-glow">
+<div class="flex items-center gap-2 mb-3 border-b border-border-subtle pb-2 text-text-secondary">
+<button class="p-1 hover:text-text-primary hover:bg-white/5 rounded"><span class="material-symbols-outlined text-[18px]">format_bold</span></button>
+<button class="p-1 hover:text-text-primary hover:bg-white/5 rounded"><span class="material-symbols-outlined text-[18px]">format_italic</span></button>
+<button class="p-1 hover:text-text-primary hover:bg-white/5 rounded"><span class="material-symbols-outlined text-[18px]">format_list_bulleted</span></button>
+<div class="w-px h-4 bg-border-subtle mx-1"></div>
+<button class="p-1 hover:text-text-primary hover:bg-white/5 rounded"><span class="material-symbols-outlined text-[18px]">link</span></button>
+</div>
+<div class="font-body-md text-body-md text-text-primary outline-none min-h-[100px]" contenteditable="true">
+<p class="mb-2">We need to implement a global command palette (Cmd+K) that allows users to quickly navigate, search for tasks, and execute quick actions across the platform.</p>
+<ul class="list-disc pl-5 mb-2 text-text-secondary">
+<li>Fuzzy search for tasks by ID or Title</li>
+<li>Quick actions (Create Task, Change Theme)</li>
+<li>Keyboard navigation support</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Metadata -->
+<div class="w-[280px] bg-surface-sidebar/50 p-6 overflow-y-auto custom-scroll flex flex-col gap-6">
+<!-- Assignees -->
+<div>
+<h4 class="font-label-md text-label-md text-text-secondary mb-3">Assignees</h4>
+<div class="flex items-center gap-3 p-2 hover:bg-white/5 rounded-lg cursor-pointer transition-colors border border-transparent hover:border-border-subtle">
+<img class="w-8 h-8 rounded-full object-cover" data-alt="A detailed, professional avatar of a young female software engineer looking confidently into the camera, set against a dark studio background with subtle blue rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyq67z7eNTVRoxDb2LovRuTCJ-sMWAtyEG87cA5yMvxdgu76HdFEZ5vkbLU3uwjzQzyz-Hs24K0uRoksJbv0Z6RzSd_pyaDjbsaRugax0O-o7rFpRD8nejSca3VDOfjNbhaukSqjuGht7UMQ0Fi0dovT70swu_QAkkykscJJtkIotdMhunelp0_E73UABSalzyNpMObVtUGVD9o5HyjUrh4AvU8ENJW2AE3YHIiKNZ2rzigOs8UKGWrRvOjKmkoYcHUrhADEuMb19Y"/>
+<span class="font-body-sm text-body-sm text-text-primary">Sarah Chen</span>
+</div>
+<button class="mt-2 flex items-center gap-2 text-text-secondary font-body-sm text-body-sm hover:text-text-primary transition-colors p-2 w-full">
+<span class="material-symbols-outlined text-[18px]">add</span> Add assignee
+                    </button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

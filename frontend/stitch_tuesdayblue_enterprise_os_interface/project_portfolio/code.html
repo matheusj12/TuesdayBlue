@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TuesdayBlue - Projects</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-card": "#151C2F",
+                      "tertiary": "#ffb596",
+                      "background": "#0f131e",
+                      "on-secondary-fixed-variant": "#004880",
+                      "surface": "#0f131e",
+                      "success": "#22C55E",
+                      "on-tertiary-container": "#ffede6",
+                      "on-surface-variant": "#c3c6d7",
+                      "secondary-container": "#0072c4",
+                      "surface-sidebar": "#0F172A",
+                      "surface-bright": "#353945",
+                      "on-tertiary": "#581e00",
+                      "surface-variant": "#313441",
+                      "error": "#ffb4ab",
+                      "text-primary": "#F8FAFC",
+                      "inverse-on-surface": "#2c303c",
+                      "secondary-fixed-dim": "#a1c9ff",
+                      "primary": "#b4c5ff",
+                      "warning": "#F59E0B",
+                      "tertiary-fixed": "#ffdbcd",
+                      "on-secondary-container": "#f0f4ff",
+                      "on-tertiary-fixed": "#360f00",
+                      "on-primary": "#002a78",
+                      "surface-dim": "#0f131e",
+                      "border-subtle": "rgba(255, 255, 255, 0.08)",
+                      "outline-variant": "#434655",
+                      "on-primary-fixed": "#00174b",
+                      "secondary": "#a1c9ff",
+                      "on-tertiary-fixed-variant": "#7d2d00",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "inverse-surface": "#dfe2f2",
+                      "tertiary-fixed-dim": "#ffb596",
+                      "danger": "#EF4444",
+                      "tertiary-container": "#bc4800",
+                      "on-error": "#690005",
+                      "on-background": "#dfe2f2",
+                      "secondary-fixed": "#d2e4ff",
+                      "surface-tint": "#b4c5ff",
+                      "on-surface": "#dfe2f2",
+                      "primary-fixed": "#dbe1ff",
+                      "on-primary-container": "#eeefff",
+                      "error-container": "#93000a",
+                      "surface-container": "#1b1f2b",
+                      "outline": "#8d90a0",
+                      "primary-container": "#2563eb",
+                      "on-secondary-fixed": "#001c37",
+                      "on-error-container": "#ffdad6",
+                      "surface-container-high": "#262a36",
+                      "inverse-primary": "#0053db",
+                      "on-secondary": "#00325a",
+                      "text-secondary": "#94A3B8",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "surface-container-lowest": "#0a0e19",
+                      "surface-container-low": "#171b27",
+                      "surface-container-highest": "#313441"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sidebar-width": "280px",
+                      "margin-desktop": "40px",
+                      "container-max": "1440px",
+                      "gutter": "24px",
+                      "margin-mobile": "16px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "title-lg": [
+                              "Inter"
+                      ],
+                      "display-md": [
+                              "Inter"
+                      ],
+                      "code": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "title-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-md": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "code": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-md": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "30px",
+                              {
+                                      "lineHeight": "38px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: #090D18;
+            color: #F8FAFC;
+        }
+        .glass-panel {
+            background: rgba(21, 28, 47, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(37, 99, 235, 0.1);
+            border-color: rgba(37, 99, 235, 0.3);
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090D18; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #313441; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #434655; 
+        }
+    </style>
+</head>
+<body class="flex h-screen overflow-hidden font-sans antialiased selection:bg-primary-container/30 selection:text-text-primary">
+<!-- JSON Sidebar -->
+<aside class="fixed left-0 top-0 h-screen w-sidebar-width bg-surface-sidebar dark:bg-surface-sidebar border-r border-border-subtle flex flex-col p-gutter z-50">
+<!-- Brand -->
+<div class="flex items-center gap-3 mb-8">
+<div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary-container to-inverse-primary flex items-center justify-center shadow-[0_0_15px_rgba(37,99,235,0.3)]">
+<span class="material-symbols-outlined text-white text-sm" style="font-variation-settings: 'FILL' 1;">widgets</span>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-text-primary">TuesdayBlue</h1>
+<p class="font-label-md text-label-md text-text-secondary">Enterprise OS</p>
+</div>
+</div>
+<!-- CTA -->
+<button class="w-full mb-8 py-2.5 px-4 rounded-lg bg-gradient-to-r from-primary-container to-inverse-primary text-white font-label-md text-label-md flex items-center justify-center gap-2 hover:shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all duration-300 relative overflow-hidden group">
+<div class="absolute inset-0 bg-white/20 translate-y-[-100%] group-hover:translate-y-[100%] transition-transform duration-500"></div>
+<span class="material-symbols-outlined text-sm">add</span>
+            New Project
+        </button>
+<!-- Main Nav -->
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-md text-label-md">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-primary font-bold bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">folder_open</span>
+<span class="font-label-md text-label-md">Projects</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">view_kanban</span>
+<span class="font-label-md text-label-md">Boards</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">event_repeat</span>
+<span class="font-label-md text-label-md">Timeline</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="font-label-md text-label-md">Team</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-label-md text-label-md">Settings</span>
+</a>
+</nav>
+<!-- Footer Nav -->
+<div class="pt-4 border-t border-border-subtle space-y-1 mt-auto">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">help_outline</span>
+<span class="font-label-md text-label-md">Support</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="font-label-md text-label-md">Account</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 ml-sidebar-width flex flex-col relative h-full">
+<!-- JSON Topbar -->
+<header class="sticky top-0 z-40 w-full bg-background/80 backdrop-blur-xl border-b border-border-subtle shadow-sm">
+<div class="flex items-center justify-between px-margin-desktop h-16">
+<!-- Left: Search & Context -->
+<div class="flex items-center gap-6 flex-1">
+<h2 class="font-title-lg text-title-lg font-bold text-text-primary border-r border-border-subtle pr-6 hidden md:block">TuesdayBlue</h2>
+<div class="relative w-64 md:w-96 group">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-secondary group-focus-within:text-primary transition-colors text-sm">search</span>
+<input class="w-full bg-surface-card border border-border-subtle rounded-lg py-1.5 pl-9 pr-3 text-sm text-text-primary placeholder:text-text-secondary focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 transition-all" placeholder="Search projects, tasks, or people..." type="text"/>
+<div class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1 opacity-50">
+<span class="material-symbols-outlined text-[10px]">keyboard_command_key</span>
+<span class="text-[10px] font-code">K</span>
+</div>
+</div>
+</div>
+<!-- Right: Actions -->
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1 border-r border-border-subtle pr-4">
+<button class="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors relative">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-danger"></span>
+</button>
+<button class="p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+</button>
+</div>
+<button class="px-4 py-1.5 rounded-lg bg-surface-card border border-border-subtle text-text-primary font-label-md text-label-md hover:bg-white/5 hover:border-primary/50 transition-all flex items-center gap-2">
+<span>Create</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-variant overflow-hidden border border-border-subtle hover:border-primary/50 transition-colors">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="A detailed 50-100 word prompt describing a high-quality, professional corporate headshot of a diverse individual, used as an avatar in an enterprise software interface. The lighting should be soft and flattering, with a neutral, slightly blurred dark background to fit the dark mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATqYdhF1xbKvlIXrUa16uhFlD1iqTNYrLj8AKMGmi4hFsnfZPn6Q_tSs0mvqbDJ9e8kwaFAjkovEzrvUAHMEVoaAlY6QM4-BN1-Pn5UV0u6EeQdzNU5appZEGAeVFBme74Vk8V29_4NipPE5eX9Q_juw2ri-OwScdOnNsWs8gt5QlNvgrsk5pEWJiHCp7exPyekN1_HMKtpKJk9HDs6WjobeLgaJqvb2Ra-KrvWLy12YmyLQULGo4nD2MXE5AAPitnxuhSIn-qg8_f"/>
+</button>
+</div>
+</div>
+</header>
+<!-- Canvas -->
+<main class="flex-1 overflow-y-auto p-margin-desktop bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary-container/5 via-background to-background">
+<div class="max-w-[1440px] mx-auto space-y-8">
+<!-- Page Header & Controls -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<h1 class="font-display-md text-display-md text-text-primary mb-2">Projects</h1>
+<p class="font-body-lg text-body-lg text-text-secondary">Manage and track enterprise initiatives across all departments.</p>
+</div>
+<div class="flex items-center gap-3">
+<!-- Filters -->
+<div class="flex bg-surface-card rounded-lg p-1 border border-border-subtle">
+<button class="px-3 py-1.5 rounded text-sm font-medium bg-white/10 text-text-primary shadow-sm">All</button>
+<button class="px-3 py-1.5 rounded text-sm font-medium text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors">Active</button>
+<button class="px-3 py-1.5 rounded text-sm font-medium text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors">Completed</button>
+</div>
+<button class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border-subtle bg-surface-card hover:bg-white/5 transition-colors text-text-secondary hover:text-text-primary text-sm font-medium">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+                            Filter
+                        </button>
+<!-- View Toggle -->
+<div class="flex bg-surface-card rounded-lg p-1 border border-border-subtle">
+<button class="p-1.5 rounded bg-white/10 text-primary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+<button class="p-1.5 rounded text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">view_list</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="project-card glass-panel rounded-xl p-6 flex flex-col gap-5 cursor-pointer relative overflow-hidden group">
+<!-- Decorative top glow -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-primary-container to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center border border-border-subtle">
+<span class="material-symbols-outlined text-primary">rocket_launch</span>
+</div>
+<span class="px-2.5 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-success/10 text-success border border-success/20">On Track</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-text-primary mb-1 group-hover:text-primary transition-colors">Apollo 11 Redesign</h3>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2">Complete overhaul of the main dashboard interface to improve user retention and streamline data visualization for enterprise clients.</p>
+</div>
+<div class="mt-auto space-y-4">
+<!-- Progress -->
+<div>
+<div class="flex justify-between text-xs mb-1.5">
+<span class="text-text-secondary">Progress</span>
+<span class="text-text-primary font-medium">75%</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary-container to-inverse-primary h-full rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-border-subtle">
+<div class="flex -space-x-2">
+<img alt="Team member" class="w-7 h-7 rounded-full border-2 border-surface-card object-cover" data-alt="A detailed 50-100 word prompt describing a professional corporate headshot of a diverse team member, suitable for a small avatar in a dark mode UI. Lighting is cinematic and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC04HimYjFfP888mVYSsmo7Tsl-nRGbicVMZn6SYuuxWAXuwVclreOFDP19SGPae4wJYUD3aBahzcCxdhZmMnM9IlklrK0ItV05bS4jHWvuw4Gw36lxz37D0D3zTw1b6ypxm-jGNd2U9nGwxVb8RKoo_i5XKaN3QIfBzLGghuxhb5x_ZfeOU2Ybpqro1fIoxX9et2Un5aQ32LYcPQDdRgj09wyWu1y6wAsXc6EWQPoH3qLK94ekX87MZn40L6nMZCn1JeuhjGS08d0g"/>
+<img alt="Team member" class="w-7 h-7 rounded-full border-2 border-surface-card object-cover" data-alt="A detailed 50-100 word prompt describing a professional corporate headshot of a diverse team member, suitable for a small avatar in a dark mode UI. Lighting is cinematic and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTRPw2_fjz2T8G3rftuc-tgpP1usPgHz_e_MXo3HtJ0w1-NskcTQk5tqwa-HbbuaS9nHcdESTjTr9BTeN-PWirG_EN7BaijP45oLEapMFdEeqEgXBb_Likjd53Eyrd6P35gRH4GIkI_o_0StH6YFaL2dt5Mc7ijIVzIorLgRzO-owNP5N-DGffJLPOtKHgMI9WkP6omgyQWqYW9vMtbevUj2Ojn5uUplwl7OdH5Qs8awIUeZAPHK4TSeqqqMiOjusOUg2_xRyZtpml"/>
+<img alt="Team member" class="w-7 h-7 rounded-full border-2 border-surface-card object-cover" data-alt="A detailed 50-100 word prompt describing a professional corporate headshot of a diverse team member, suitable for a small avatar in a dark mode UI. Lighting is cinematic and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmx8ojkRMJIG643hoLkbV5lpwAKNTYEz7LnBWCYMZrt-18fMGx_R3UilugI6Ovlvv1WRbvKnvEp5qKxQltFflF_G6t91t9b4ASZrr6mYC7Z-RBouFrN-kYOlgOSpvOofnruTvFKjKmqhRLgVzWzjuG17rdQG-WW7__MMuDA3WWK2HDrWaxpqN4h0WZT6iigHtur7P-Amdv9Ed74CFJinK4lUtXXdH2CPmhj66O6LrSc8Bc-r2Aml6AhbNSY6S8Jyevg_LocWdRfHnS"/>
+<div class="w-7 h-7 rounded-full border-2 border-surface-card bg-surface-variant flex items-center justify-center text-[10px] text-text-secondary font-medium">+2</div>
+</div>
+<div class="flex items-center gap-1 text-xs text-text-secondary">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                                    Oct 24
+                                </div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="project-card glass-panel rounded-xl p-6 flex flex-col gap-5 cursor-pointer relative overflow-hidden group">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-warning to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center border border-border-subtle">
+<span class="material-symbols-outlined text-warning">science</span>
+</div>
+<span class="px-2.5 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-warning/10 text-warning border border-warning/20">At Risk</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-text-primary mb-1 group-hover:text-primary transition-colors">Project X: Genesis</h3>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2">Research and development for the next generation AI integration pipeline. Currently facing delays in data processing optimization.</p>
+</div>
+<div class="mt-auto space-y-4">
+<!-- Progress -->
+<div>
+<div class="flex justify-between text-xs mb-1.5">
+<span class="text-text-secondary">Progress</span>
+<span class="text-text-primary font-medium">42%</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden">
+<div class="bg-warning h-full rounded-full" style="width: 42%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-border-subtle">
+<div class="flex -space-x-2">
+<img alt="Team member" class="w-7 h-7 rounded-full border-2 border-surface-card object-cover" data-alt="A detailed 50-100 word prompt describing a professional corporate headshot of a diverse team member, suitable for a small avatar in a dark mode UI. Lighting is cinematic and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWzNZ3pa75QKw8YPI435k-a0M7eyajS70irAv2cfHqr6yg_P-Ea75s77RzyU8YQ4ORwNVi5JuvKoFNdK2zn4FNrMDVKDvZm8V3nmtX-vS8AHSWxitVLXu8CMLyKMof-WZ7A9qJNzMiX6IS4s59MKQVT_s_ktsz_36DnzS24kjqXc01SbmDVHeOV7MLOqqRtS2mX2fujb8xBfZ_Rmj691GJ_gp-sEoScPs7nhifygpHI2tYtbNTYJB7muzBzZrEsXwbbLlEuYnD19tc"/>
+<img alt="Team member" class="w-7 h-7 rounded-full border-2 border-surface-card object-cover" data-alt="A detailed 50-100 word prompt describing a professional corporate headshot of a diverse team member, suitable for a small avatar in a dark mode UI. Lighting is cinematic and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqhAWjkbsevGGLJyd8eHYRK07Ts8vM6C-EOasY-yJet2aUdPSY_t7i5Qpc6Tsir3RSMQlg4yaspZNMcXWQVbMI5cdsHPVwWEagxJ6qgxgjsXtHjqTw5dzKH8XY268OcVJqvgjZVjNGQDn5MG8EglfoImaV7pUJzs6rmrzm1z-OwwMxndiO_m-cdfk304F1-kDPmLbxLsqWQUBO0fVyR9aopXgQ8YlGQTRf7flC1wuEtIKmvFnvdLthBAQzH2uyJiP8-3yYhyFFCX_I"/>
+</div>
+<div class="flex items-center gap-1 text-xs text-text-secondary">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                                    Nov 15
+                                </div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="project-card glass-panel rounded-xl p-6 flex flex-col gap-5 cursor-pointer relative overflow-hidden group">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-primary-container to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-lg bg-surface-variant flex items-center justify-center border border-border-subtle">
+<span class="material-symbols-outlined text-secondary">dns</span>
+</div>
+<span class="px-2.5 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase bg-success/10 text-success border border-success/20">On Track</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-text-primary mb-1 group-hover:text-primary transition-colors">Core Infrastructure v2.0</h3>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2">Migration of legacy systems to the new microservices architecture to ensure high availability and scalability for Q4 projections.</p>
+</div>
+<div class="mt-auto space-y-4">
+<!-- Progress -->
+<div>
+<div class="flex justify-between text-xs mb-1.5">
+<span class="text-text-secondary">Progress</span>
+<span class="text-text-primary font-medium">89%</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary-container to-inverse-primary h-full rounded-full" style="width: 89%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-border-subtle">
+<div class="flex -space-x-2">
+<img alt="Team member" class="w-7 h-7 rounded-full border-2 border-surface-card object-cover" data-alt="A detailed 50-100 word prompt describing a professional corporate headshot of a diverse team member, suitable for a small avatar in a dark mode UI. Lighting is cinematic and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk7DH7w7KnYTxgOpEW9xxYxDHW_vxNUSLYRgP2RuX0mZapdEHmqgS2g33PNcZn5jjRKIPuTlJLjTR6P8dzVmJhNJf2u9YsD3F1JbrW9f5sYd8NTGZ_gNnIJIL989Dw5H-0pJ_NJk5YyXCEYRHh1GekwHw7Ap5bYkh7zstUCW_bR2zT2ycOMIJaWW_7S_czOWRM818xJG_n9cA2mAyeWTGAmgCJNbDuhQBSmKWjGz1FxxMXwCRux-YfNBjvr3veLA6rUftm28vSwDe1"/>
+<img alt="Team member" class="w-7 h-7 rounded-full border-2 border-surface-card object-cover" data-alt="A detailed 50-100 word prompt describing a professional corporate headshot of a diverse team member, suitable for a small avatar in a dark mode UI. Lighting is cinematic and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwZnTbsz3f0kgzeD6duSKsaH84UDhtPkgAXj0hxVt7Vlia6u4WhW-4k1-XfGl-igTOqj86ypoEFNeJuVNhmGOyOzGBEhpvKbPrDQEiWKQQVL9pdTNdcoWRVovdE7ouWOEby1nKWO82TTdq4DUb-NfisHKds3W5Ycu5UXy0ZxhAtk08BUgEkP7MmxKB4X014GU6lWZr2Vgrgsay7P-S4Isi7bTVIvXANlGDvXI_ZwL0sME2DMivaOFb4-aRRyA80-zIkaOOYmkWh6M7"/>
+<img alt="Team member" class="w-7 h-7 rounded-full border-2 border-surface-card object-cover" data-alt="A detailed 50-100 word prompt describing a professional corporate headshot of a diverse team member, suitable for a small avatar in a dark mode UI. Lighting is cinematic and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZjXWib4V0KQd8v-6CfE9tmXe2vopkKd7QGjTPvUkLRQc5YiYVXW6cWJhIY8N-e3zb-ijTdHQjgMGv0qek0iGxg6GCcS_5vdvfXp8G8nUbPBo8p5xBFjTPYbJpKbHMrPCuT99CI_QtTgCWcp7aDW6QYPYtK7IWZO4aOxpvL6fXlxj8bQtkZrKbkthyGT7WJ2DeRQq7CyVGqpp2qKzSa-pnK7fDQbITf7JzdIHH6kxEgYGA_WIS0XQJexYrxT8hqqaO4mw_IxjxvaOz"/>
+<img alt="Team member" class="w-7 h-7 rounded-full border-2 border-surface-card object-cover" data-alt="A detailed 50-100 word prompt describing a professional corporate headshot of a diverse team member, suitable for a small avatar in a dark mode UI. Lighting is cinematic and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU2lo2kvxORnRBZC61jKVeygIKXY2kcvtiWMOUUVajnP-idBQCA_DRiToD6mYLPSxqJilOiGkkX8egGbUkURzVPPXzHSa1nbUn3_vvz_V6RXnReII-TxekYqi4q5sIPv_Q9qR6JyZJuaPrv0t1vla5smKGHRhOLSFT3k8n2QYztd7pOGj5CgU3dY2B3dFrSVgOgEMu_-OUdEQCL1sfIrjQ-MhZzszvdJNMxCXRO4Y8xfELfgRw4w4WC345w9ZMiEW6TlwTmCXiARXL"/>
+</div>
+<div class="flex items-center gap-1 text-xs text-text-secondary">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                                    Sep 30
+                                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
