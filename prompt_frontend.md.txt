@@ -1,0 +1,696 @@
+# TuesdayBlue — Frontend Development Specification
+
+## Objective
+
+Build **ONLY the frontend** of an enterprise project management platform called **TuesdayBlue**.
+
+This phase is exclusively focused on creating a production-quality React interface.
+
+Do NOT implement:
+
+- Backend
+- API
+- Authentication
+- Database
+- Business Logic
+- Server Actions
+- WebSockets
+- State persistence
+
+Every screen must use mocked data.
+
+The frontend should be completely independent and ready to connect to a future Rails 8 API.
+
+---
+
+# Technology
+
+Use only:
+
+- React 19
+- TypeScript
+- Vite
+- React Router
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
+- TanStack Table
+- React Hook Form
+- Zod
+- Lucide React
+- Recharts
+- DnD Kit
+
+---
+
+# Design Philosophy
+
+Do NOT create a generic admin dashboard.
+
+The interface should feel like a premium Enterprise Operating System.
+
+Inspirations:
+
+- Linear
+- ClickUp 3.0
+- Monday.com
+- Jira
+- Notion
+- Figma
+- Raycast
+- Vercel
+- Stripe
+- Arc Browser
+- OpenAI
+- Apple VisionOS
+
+The interface should communicate:
+
+- Enterprise
+- Premium
+- Minimal
+- Intelligent
+- Fast
+- Beautiful
+- Modern
+
+---
+
+# Theme
+
+Dark Mode Only
+
+Background:
+#090D18
+
+Sidebar:
+#0F172A
+
+Cards:
+#151C2F
+
+Borders:
+rgba(255,255,255,0.08)
+
+Primary:
+#2563EB
+
+Accent:
+#5AA9FF
+
+Success:
+#22C55E
+
+Warning:
+#F59E0B
+
+Danger:
+#EF4444
+
+Use:
+
+- Large rounded corners
+- Soft shadows
+- Glassmorphism
+- Smooth gradients
+- Excellent spacing
+- High readability
+- Premium animations
+
+---
+
+# Typography
+
+Inter
+
+Large headings
+
+Comfortable spacing
+
+Consistent hierarchy
+
+Minimal visual noise
+
+---
+
+# Animations
+
+Use Framer Motion.
+
+Smooth page transitions.
+
+Hover effects.
+
+Animated cards.
+
+Fade.
+
+Scale.
+
+Slide.
+
+Nothing exaggerated.
+
+Everything should feel polished.
+
+---
+
+# Layout
+
+Desktop-first.
+
+Responsive.
+
+Structure:
+
+Fixed Sidebar
+
+Sticky Topbar
+
+Scrollable Content
+
+Command Palette
+
+Floating AI Assistant
+
+---
+
+# Sidebar
+
+Dashboard
+
+Projects
+
+Portfolio
+
+Boards
+
+Tasks
+
+My Work
+
+Teams
+
+Calendar
+
+Timeline
+
+Roadmaps
+
+Dashboards
+
+Reports
+
+Automation
+
+Templates
+
+Documents
+
+Notifications
+
+Administration
+
+Settings
+
+Profile
+
+Workspace Switcher
+
+---
+
+# Topbar
+
+Workspace Selector
+
+Global Search
+
+Quick Actions
+
+Notifications
+
+User Menu
+
+AI Search
+
+Command Palette Button
+
+---
+
+# Pages
+
+Create complete interfaces for:
+
+Dashboard
+
+Projects
+
+Project Details
+
+Boards
+
+Board Details
+
+Task Details
+
+Calendar
+
+Timeline
+
+Roadmaps
+
+Teams
+
+My Tasks
+
+Dashboards
+
+Reports
+
+Automation
+
+Templates
+
+Documents
+
+Notifications
+
+Administration
+
+Settings
+
+Profile
+
+---
+
+# Dashboard
+
+Personal dashboard.
+
+Executive dashboard.
+
+Widgets.
+
+KPIs.
+
+Recent activity.
+
+Tasks.
+
+Calendar.
+
+Notifications.
+
+Projects.
+
+Burndown.
+
+Velocity.
+
+Capacity.
+
+Roadmap.
+
+Charts.
+
+AI Insights.
+
+Everything customizable.
+
+---
+
+# Projects
+
+Grid View
+
+List View
+
+Cards
+
+Portfolio
+
+Project Health
+
+Progress
+
+Milestones
+
+Timeline
+
+Participants
+
+Budget
+
+Status
+
+Risk
+
+Filters
+
+Search
+
+---
+
+# Boards
+
+Support multiple views:
+
+Kanban
+
+Table
+
+List
+
+Timeline
+
+Calendar
+
+Roadmap
+
+Sprint
+
+Gallery
+
+Each view should have a polished interface.
+
+---
+
+# Tasks
+
+Beautiful Task Drawer.
+
+Task Modal.
+
+Task Details.
+
+Checklist.
+
+Subtasks.
+
+Comments.
+
+Attachments.
+
+History.
+
+Activity.
+
+Time Tracking.
+
+Tags.
+
+Priority.
+
+Assignees.
+
+Dependencies.
+
+Custom Fields.
+
+---
+
+# Calendar
+
+Modern Calendar UI.
+
+Month
+
+Week
+
+Day
+
+Agenda
+
+Drag & Drop appearance.
+
+---
+
+# Timeline
+
+Elegant timeline.
+
+Dependencies.
+
+Milestones.
+
+Critical path.
+
+Resource allocation.
+
+---
+
+# Teams
+
+People directory.
+
+Availability.
+
+Capacity.
+
+Vacation.
+
+Current workload.
+
+Performance cards.
+
+---
+
+# Reports
+
+Professional dashboards.
+
+Charts.
+
+KPIs.
+
+Burndown.
+
+Velocity.
+
+Cycle Time.
+
+Lead Time.
+
+SLA.
+
+Performance.
+
+Capacity.
+
+Trend analysis.
+
+---
+
+# Automation
+
+Modern Workflow Builder.
+
+Visual node editor.
+
+Triggers.
+
+Conditions.
+
+Actions.
+
+Connections.
+
+Inspired by n8n and Monday Automations.
+
+---
+
+# Templates
+
+Marketplace layout.
+
+Project Templates.
+
+Board Templates.
+
+Sprint Templates.
+
+Checklist Templates.
+
+Automation Templates.
+
+Dashboard Templates.
+
+---
+
+# Documents
+
+Modern document editor.
+
+Markdown.
+
+Tables.
+
+Images.
+
+Code Blocks.
+
+Comments.
+
+Attachments.
+
+Notion-inspired UI.
+
+---
+
+# Components
+
+Create reusable components.
+
+Sidebar
+
+Topbar
+
+Breadcrumb
+
+Button
+
+Input
+
+Select
+
+Command Palette
+
+Search
+
+Modal
+
+Drawer
+
+Tabs
+
+Accordion
+
+Popover
+
+Tooltip
+
+Toast
+
+Badge
+
+Avatar
+
+Dropdown
+
+Pagination
+
+Metric Card
+
+Chart Card
+
+Widget
+
+Kanban Card
+
+Task Card
+
+Timeline Item
+
+Calendar Event
+
+Skeleton
+
+Empty State
+
+Loading
+
+AI Card
+
+Notification Card
+
+---
+
+# Mock Data
+
+Create realistic mock data.
+
+Projects
+
+Users
+
+Tasks
+
+Comments
+
+Teams
+
+Notifications
+
+Reports
+
+Dashboards
+
+Roadmaps
+
+KPIs
+
+Everything must appear as a real enterprise application.
+
+---
+
+# Folder Structure
+
+src/
+
+app/
+
+components/
+
+features/
+
+layouts/
+
+hooks/
+
+types/
+
+utils/
+
+styles/
+
+assets/
+
+mock/
+
+routes/
+
+Every feature must be isolated.
+
+---
+
+# Code Rules
+
+Use Functional Components.
+
+Strict TypeScript.
+
+Reusable Components.
+
+Composition over inheritance.
+
+No duplicated code.
+
+No inline styles.
+
+No business logic.
+
+No API calls.
+
+No backend.
+
+Everything should be ready to integrate later with a Rails 8 API.
+
+---
+
+# Final Goal
+
+Build one of the most beautiful enterprise React frontends ever created.
+
+The interface should look more modern and premium than Monday.com, ClickUp, Jira, Asana and Linear.
+
+Every screen should feel handcrafted, elegant, fast and production-ready.
